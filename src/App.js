@@ -37,12 +37,6 @@ function App() {
     // sumeet.google.com, http, https
 	}, []);
 	const requestedUser = users.find((user) => user.username === subdomain);
-	const url = `${window.location.protocol +
-		"//" +
-		"sumeet" +
-		"." +
-		window.location.host}`;
-	console.log(url);
 	console.log(requestedUser);
 	console.log(subdomain);
 	return (
