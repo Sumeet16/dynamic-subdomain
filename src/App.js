@@ -31,7 +31,7 @@ function App() {
 
 		const arr = host
 			.split(".")
-			.slice(0, host.includes("localhost") ? -1 : -2);
+			.slice(0, host.includes("localhost") ? -1 : -3);
 		if (arr.length > 0) setSubDomain(arr[0]);
 	}, []);
 	const requestedUser = users.find((user) => user.username === subdomain);
